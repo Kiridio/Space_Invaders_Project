@@ -1,0 +1,123 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkk6xx3l1vo4t"]
+
+[ext_resource type="Script" path="res://Scenes/start_screen.gd" id="1_5go6x"]
+[ext_resource type="Texture2D" uid="uid://m4ub6oll4ikv" path="res://Assets/Invaders/Invader3-1.png" id="1_61bet"]
+[ext_resource type="FontFile" uid="uid://ch103gi2tob72" path="res://Assets/font/andina.ttf" id="2_hid0q"]
+[ext_resource type="Texture2D" uid="uid://bn227mp3yqjlo" path="res://Assets/Invaders/Invader2-1.png" id="3_o5wny"]
+[ext_resource type="Texture2D" uid="uid://dy2h5dklc8h7p" path="res://Assets/Invaders/Invader1-1.png" id="4_wxoya"]
+
+[node name="start_screen" type="CanvasLayer"]
+script = ExtResource("1_5go6x")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="HBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+z_as_relative = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0.709804, 0, 1)
+theme_override_fonts/font = ExtResource("2_hid0q")
+theme_override_font_sizes/font_size = 108
+text = "SPACE
+INVADERS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="InvaderContainer1" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Invader1Tex" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/InvaderContainer1"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = ExtResource("1_61bet")
+
+[node name="Invader1Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/InvaderContainer1"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_hid0q")
+theme_override_font_sizes/font_size = 30
+text = "= 10 POINTS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InvaderContainer2" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Invader2Tex" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/InvaderContainer2"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(80, 60)
+layout_mode = 2
+texture = ExtResource("3_o5wny")
+
+[node name="Invader2Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/InvaderContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_hid0q")
+theme_override_font_sizes/font_size = 30
+text = "= 20 POINTS"
+
+[node name="InvaderContainer3" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Invader3Tex" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/InvaderContainer3"]
+unique_name_in_owner = true
+texture_filter = 1
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = ExtResource("4_wxoya")
+
+[node name="Invader3Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer/InvaderContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_hid0q")
+theme_override_font_sizes/font_size = 30
+text = "= 40 POINTS"
+
+[node name="Button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_hid0q")
+theme_override_font_sizes/font_size = 30
+text = "PRESS TO START"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.75
+autostart = true
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Button" to="." method="load_game"]
+[connection signal="timeout" from="Timer" to="." method="show_next_control"]

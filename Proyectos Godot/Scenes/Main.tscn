@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0bx1xt1q26rl"]
+
+[ext_resource type="PackedScene" uid="uid://ycl20k4gndt3" path="res://Scenes/Player.tscn" id="1_g2sgq"]
+
+[node name="main" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource("1_g2sgq")]
+texture_filter = 1
+position = Vector2(576, 645)
+scale = Vector2(0.4, 0.4)
