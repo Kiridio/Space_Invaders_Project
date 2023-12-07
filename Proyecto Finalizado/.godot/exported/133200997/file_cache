@@ -1,0 +1,15 @@
+res://Resources/invader_1.tres::c1f004fd56d4de91561859637bd0f816::1701300625::res://.godot/exported/133200997/export-ebe957dd2ab5b3c0683a65147079e157-invader_1.res
+res://Resources/invader_2.tres::19f9e3dec696202de92bcd75e38fea3e::1701300625::res://.godot/exported/133200997/export-2311a4f5b9b8abca1fe730730117d686-invader_2.res
+res://Resources/invader_3.tres::420de3b6021f9159a6d5c46550e425cb::1701300625::res://.godot/exported/133200997/export-7b63a63347469ce2420c0d60fdb27a84-invader_3.res
+res://Scenes/bullet_catcher.tscn::daeb616e8b57c6d6cd213ad85f11aa52::1701688687::res://.godot/exported/133200997/export-4cca3e30edcda128b87c07025b6f3b66-bullet_catcher.scn
+res://Scenes/bunker.tscn::38133d2301f0a859dca624b107d5784e::1701688688::res://.godot/exported/133200997/export-0ad2f975b8140eb7563e386518af723e-bunker.scn
+res://Scenes/invader.tscn::20e1862148e260dabad5b60411e1ee1c::1701688687::res://.godot/exported/133200997/export-04248b5784288ebc9463d4655f026c0c-invader.scn
+res://Scenes/invader_shot.tscn::4aee9cf7765ebaebc3a30110a50f4438::1701688687::res://.godot/exported/133200997/export-5a04b2d597eeb139f94d441f15c202f0-invader_shot.scn
+res://Scenes/invader_spawner.tscn::5a4a07454a074e2cc88d16ec61dd6c7d::1701688687::res://.godot/exported/133200997/export-3433c68dd89abf95668bfe8d49ec1751-invader_spawner.scn
+res://Scenes/laser.tscn::216e67ef3e7a8ea21d9ce40c69686f3b::1701688687::res://.godot/exported/133200997/export-a0c329b33cacdbf8e1af195c6cf376db-laser.scn
+res://Scenes/main.tscn::2b3c8fc24859bed50f332b132c1b3da3::1701688686::res://.godot/exported/133200997/export-2ddd04d543d5858e7f20c9299a8b5096-main.scn
+res://Scenes/player.tscn::c53fa21a1d74401588597a940aa6f98e::1701688687::res://.godot/exported/133200997/export-1753c997600d68ab5d20ae99fddb15c6-player.scn
+res://Scenes/ufo.tscn::5aeef57d7844910f9a1044eaaa088b75::1701688687::res://.godot/exported/133200997/export-0d08abd64769068e0169b7ed50b0aa0c-ufo.scn
+res://Scenes/ui.tscn::80c7e3bce644336fba19629500bae2a6::1701688688::res://.godot/exported/133200997/export-bc7c2c8286022576ab0a03a61017540b-ui.scn
+res://start_screen.tscn::7b270d2b68bd45f1ab734a695e094c66::1701688687::res://.godot/exported/133200997/export-7629d1afc167605ccc7fe34222f7c5a4-start_screen.scn
+res://ufo_spawner.tscn::c4dfca6c50883598eb457fa4806e068c::1701688687::res://.godot/exported/133200997/export-b4f6a0b877dc195d073794067da231c8-ufo_spawner.scn
